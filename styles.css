@@ -267,18 +267,6 @@ h2
     gap: 20px;
 }
 
-#about .about-grid .left .content div:nth-child(4)
-{
-    padding-top: 40px;
-}
-
-#about .about-grid .left div > .tab
-{
-    text-transform: lowercase;
-    box-shadow: var(--main-blue) 0 3px;
-    padding: .5em 1em;
-}
-
 /*#about .about-grid .right
 {
     height:  ;
@@ -291,6 +279,43 @@ h2
     object-fit: cover;
     border: 1px solid var(--main-blue);
     border-radius: 25px;
+}
+  
+/* Style the buttons that are used to open the tab content */
+.tab button {
+    color: var(--main-blue);
+    background-color: inherit;
+    float: left;
+    border: 1px solid var(--main-blue);
+    box-shadow: var(--main-blue) 0 3px;
+    text-transform: lowercase;
+    cursor: pointer;
+    padding: .5em 1em;
+    transition: 0.3s;
+}
+  
+/* Change background color of buttons on hover */
+.tab button:hover {
+    background-color: var(--bg-orange);
+}
+  
+/* Create an active/current tablink class */
+.tab button.active {
+    background-color: var(--main-orange);
+    color: var(--main-blue);
+}
+  
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    margin-top: 20px;
+}
+
+#about .about-grid .left .content h3
+{
+    font-size: 24px;
+    font-weight: 400;
+    margin-bottom: 10px;
 }
 
 /*Services section*/
