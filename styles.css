@@ -1,0 +1,658 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wdth,wght,YTLC@0,6..12,75..125,200..1000,440..540;1,6..12,75..125,200..1000,440..540&display=swap');
+
+:root {
+    --main-blue: #002379;
+    --main-orange: #FF5F00;
+    --secondary-orange: #F7A16E;
+    --bg-orange: #FFFAE6;
+}
+
+*
+{
+    font-family: Nunito Sans, sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    margin: 0;
+    padding: 0;
+}
+
+body
+{
+    background-color: var(--bg-orange);
+}
+
+.container 
+{
+    width: 1320px;
+    max-width: 80%;
+    margin: auto;
+}
+
+/*Navbar-Header*/
+header
+{
+    padding-top: 60px;
+}
+
+header nav 
+{
+    padding: 14px 20px;
+    height: 72px;
+    background-color: var(--bg-orange);
+    border: 1px solid var(--main-blue);
+    border-radius: 25px;
+    box-shadow: var(--main-blue) 0 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav > .left 
+{
+    display: flex;
+    align-items: center;
+}
+
+header nav .left > *
+{
+    margin-right: 20px;
+}
+
+header nav .left ul a
+{
+    margin-right: 20px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    text-decoration: none;
+    color: black;
+}
+
+/*Hero section*/
+#hero
+{    
+    padding-top: 20px;
+    padding-bottom: 61px;
+}
+
+#hero .column-wrapper
+{
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   column-gap: 20px;
+   justify-content: space-between;
+}
+
+#hero .column-wrapper .left
+{
+    background-color: var(--secondary-orange);
+    padding: 40px;
+    border: 1px solid var(--main-blue);
+    border-radius: 25px;
+    box-shadow: var(--main-blue) 0 5px;
+}
+
+#hero .column-wrapper .left h1
+{
+    margin: 0;
+    font-size: 40px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+/*Line or Divider*/
+.line
+{
+    background-color: white;
+    height: 2px;
+    border-radius: 1px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+#hero .column-wrapper .left h3
+{
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+#hero .column-wrapper .left .buttons
+{
+    display: flex;
+    gap: 10px;
+    margin-top: 40px;
+}
+
+button
+{
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--main-orange);
+    background-color: var(--bg-orange);
+    border: 1px solid var(--main-blue);
+    border-radius: 5px;
+    padding: 1em 2em;
+    text-transform: uppercase;
+}
+
+.main-btn 
+{
+    background-color: var(--main-blue);
+    box-shadow: var(--main-orange) 0 3px;
+}
+
+/*#hero .column-wrapper .right 
+{
+
+}*/
+
+#hero .column-wrapper .right img
+{     
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 25px;
+}
+
+/*Projects section*/
+#projects
+{
+    padding: 60px 0;
+}
+
+h2 
+{
+    font-size: 32px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+#projects div > p
+{
+    text-align: center;
+}
+
+#projects .project-grid
+{
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 20px;
+    grid-template-rows: 1fr;
+    row-gap: 20px;
+}
+#projects .project-grid > .item
+{
+    background-color: var(--secondary-orange);
+    border: 1px solid var(--main-blue);
+    border-radius: 25px;
+    box-shadow: var(--main-blue) 0 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items:center;
+}
+
+#projects .project-grid .img-wrapper
+{
+    width: 100%;
+}
+
+#projects .project-grid .img-wrapper > img
+{
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 25px 25px 0 0;
+} 
+
+#projects .project-grid .item .content
+{
+    padding: 10px 40px 40px;
+    text-align: center;
+}
+
+#projects .project-grid .item .content > h3
+{
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.is-orange
+{
+    background-color: var(--main-orange);
+}
+
+#projects .project-grid .item div:nth-child(3)
+{
+    padding-bottom: 40px;
+}
+
+/*About section*/
+#about
+{
+    padding: 60px 0;
+}
+
+#about .about-grid
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 20px;
+}
+
+#about .about-grid .left
+{
+    background-color: var(--secondary-orange);
+    padding: 40px;
+    border: 1px solid var(--main-blue);
+    border-radius: 25px;
+    box-shadow: var(--main-blue) 0  5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 60px;
+}
+
+.is-left
+{
+    text-align: left;
+}
+
+#about .about-grid .left .content div:nth-child(3)
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+#about .about-grid .left .content div:nth-child(4)
+{
+    padding-top: 40px;
+}
+
+#about .about-grid .left div > .tab
+{
+    text-transform: lowercase;
+    box-shadow: var(--main-blue) 0 3px;
+    padding: .5em 1em;
+}
+
+/*#about .about-grid .right
+{
+    height:  ;
+}*/
+
+#about .about-grid .right img
+{
+    height: 100% ;
+    width: 100%;
+    object-fit: cover;
+    border: 1px solid var(--main-blue);
+    border-radius: 25px;
+}
+
+/*Services section*/
+#services 
+{
+    padding: 60px 0;
+}
+
+#services .services-grid
+{
+    display: grid;
+    grid-template-columns: repeat( 2, 1fr);
+    column-gap: 20px;
+}
+
+#services .services-grid > div 
+{
+    border: 1px solid var(--main-blue);
+    border-radius: 25px;
+    box-shadow: var(--main-blue) 0 5px;
+    padding: 40px;
+}
+
+#services .services-grid .right
+{
+    background-color: var(--secondary-orange);
+}
+
+/* Style the buttons that are used to open and close the accordion panel */
+#services .services-grid .right .accordion {
+    background-color: var(--bg-orange);
+    color: black;
+    font-size: 14px;
+    font-weight: 400;
+    cursor: pointer;
+    padding: 20px;
+    margin-bottom: 10px;
+    width: 100%;
+    text-align: left;
+    text-transform: none;
+    border: 1px solid var(--main-blue);
+    border-radius: 20px;
+    transition: 0.4s;
+}
+  
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .accordion:hover {
+    background-color: #ccc;
+}
+  
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+    padding: 40px 20px 20px;
+    margin-top: -30px;
+    margin-bottom: 10px;
+    border-radius: 0 0 20px 20px;
+    background-color: var(--bg-orange);
+    display: none;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+/*Review section*/
+#reviews
+{
+    padding: 60px 0;
+}
+
+#reviews .heading-wrapper 
+{
+    width: fit-content;
+    margin: auto;
+}
+
+#reviews .review-grid
+{
+    display: grid;
+    grid-template-columns: repeat( 3, 1fr);
+    gap: 20px;
+}
+
+#reviews .review-grid .review
+{
+    padding: 40px;
+    border: 1px solid var(--main-blue);
+    border-radius: 25px;
+    box-shadow: var(--main-blue) 0 5px;
+}
+
+#reviews .review-grid .review > .top
+{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    border-bottom: 2px solid var(--main-orange);
+}
+
+#reviews .review-grid .review img
+{
+    border: 2px solid var(--main-orange);
+    border-radius: 50%;
+}
+
+#reviews .review-grid .review > .botomn
+{
+    margin-top: 10px;
+}
+
+#reviews .review-grid .review .botomn p
+{
+    font-style: italic;
+}
+
+/*Contact Section*/
+#contact
+{
+    padding: 60px 0;
+}
+
+#contact .contact-grid 
+{
+    display: grid;
+    grid-template-columns: repeat( 2, 1fr );
+    gap: 20px;
+}
+
+#contact .contact-grid > .content-wrapper
+{
+    display:flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#contact .contact-grid .content-wrapper .heading-wrapper
+{
+    padding: 40px;
+    background-color: var(--secondary-orange);
+    border: 1px solid var(--main-blue);
+    border-radius: 25px;
+    box-shadow: var(--main-blue) 0 5px;
+}
+
+#contact .contact-grid .content-wrapper .txt
+{
+    padding: 40px;
+    border: 1px solid var(--main-blue);
+    border-radius: 25px;
+    box-shadow: var(--main-blue) 0 5px;
+    height: 100%;
+}
+
+#contact .contact-grid .content-wrapper .txt p
+{
+    margin-bottom: 10px;
+}
+
+#contact .contact-grid .content-wrapper .txt p:nth-child(3)
+{
+    color: var(--main-orange);
+    font-weight: 400;
+}
+
+#contact .contact-grid form /*  id="right"  */
+{   
+    padding: 40px;
+    background-color: var(--secondary-orange);
+    border: 1px solid var(--main-blue);
+    border-radius: 25px;
+    box-shadow: var(--main-blue) 0 5px;
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+}
+
+#contact .contact-grid form > label
+{
+    font-size: 24px;
+    font-weight: 400;
+}
+
+#contact form > input, #contact form > textarea
+{
+    border: 1px solid var(--main-blue);
+    border-radius: 20px;
+    padding: 10px 40px;
+    background-color: var(--bg-orange);
+    font-size: 14px;
+}
+
+#contact .contact-grid form > button
+{
+    align-self: flex-start;
+}
+
+footer .container > div
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+
+footer .container .copyright
+{
+    display: flex ;
+    gap: 8px;
+    align-items: center;
+    justify-content: center;
+
+    background-color: var(--secondary-orange);
+    border-radius: 25px 25px 0 0 ;
+    padding: 40px;
+}
+
+footer .container .copyright > h3
+{
+    font-size: 24px;
+    font-weight: 400;
+}
+
+/*Responsive*/
+
+/*Navbar*/
+@media ( max-width: 1154px)
+{
+    /*FOR NOW*/
+    header nav .left
+    {
+        display: none;
+    }
+
+    /*FOR NOW*/
+    header nav 
+    {
+        flex-direction: column;
+        align-items: end;
+        justify-content: center;
+    }
+}
+
+@media ( max-width: 596px)
+{
+    /*FOR NOW*/
+    #header nav .right > .main-btn
+    {
+        display: none;
+    }
+}
+
+/*Hero*/
+@media ( max-width: 1154px)
+{
+    #hero .column-wrapper
+    {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+}
+
+@media ( max-width: 596px)
+{
+    #hero .column-wrapper .buttons
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+    }
+}
+
+/*Projects*/
+@media ( max-width: 1235px)
+{
+    #projects .project-grid
+    {
+        grid-template-columns: repeat( 3, 1fr);
+        grid-template-rows: repeat( 2, 1fr );
+    }
+}
+
+@media ( max-width: 910px)
+{
+    #projects .project-grid
+    {
+        grid-template-columns: repeat( 2, 1fr );
+        grid-template-rows: repeat( 2, 1fr );
+    }
+}
+
+@media ( max-width: 596px)
+{
+    #projects .project-grid
+    {
+        grid-template-columns: minmax( 250px, 1fr);
+    }
+}
+
+/*About*/
+@media ( max-width: 1120px)
+{
+    #about .about-grid
+    {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    #about .about-grid .left .content div:nth-child(3)
+    {
+        justify-content: start;  
+    }
+}
+
+@media ( max-width: 596px)
+{
+    #about .about-grid .left .content div:nth-child(3)
+    {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    #about .about-grid .left .content
+    {
+        padding: 0.3em 0.6em;
+    }
+}
+
+/*Services*/
+@media ( max-width: 1154px)
+{
+    #services .services-grid
+    {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 20px;
+    }
+}
+
+@media ( max-width: 430px)
+{
+    
+}
+/*Reviews*/
+@media ( max-width: 1154px)
+{
+    #reviews .container
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #reviews .review-grid
+    {
+        grid-template-columns:  minmax( 300px, 800px);
+    }
+}
+
+/*Contact*/
+@media ( max-width: 992px)
+{
+    #contact .contact-grid
+    {
+        display: flex;
+        flex-direction: column;
+    }   
+}
